@@ -1,0 +1,25 @@
+@import "../../scss/Main";
+
+.header {
+  width: 100vw;
+  height: 30vh;
+  padding: 10px;
+  background-image: url("../../assets/diceHeader.jpg");
+  background-position: center;
+  background-size: cover;
+  &__title {
+    font-family: "Moon Dance", cursive;
+    font-size: $font-size-XL;
+    color: $color-text-white;
+    text-shadow: 2px 2px 2px $color-text-black;
+  }
+}
+
+@media only screen and (min-width: $breakpointXL) {
+  .header {
+    width: 70vw;
+    &__title {
+      font-size: $font-size-h1BigHeader;
+    }
+  }
+}
