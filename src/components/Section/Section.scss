@@ -1,0 +1,11 @@
+@import "../../scss/Main";
+
+.section {
+  width: 100vw;
+}
+
+@media only screen and (min-width: $breakpointXL) {
+  .section {
+    width: 70vw;
+  }
+}
