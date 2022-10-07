@@ -3,6 +3,7 @@ export default [
         id:1,
         character:"IKRA NEMMONIS",
         src:"gold.jpg",
+        information: "gold dragonborn, barbarian",
         game: "dnd",
         death: false,
         history:{
