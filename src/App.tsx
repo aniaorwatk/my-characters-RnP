@@ -1,14 +1,15 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Section from './components/Section/Section';
-
+import { Route, Routes } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import SinglePage from "./components/SinglePage/SinglePage";
 
 function App() {
   return (
-<>
-<Header />
-<Section />
-</>
+    <>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/:id" element={<SinglePage />} />
+      </Routes>
+    </>
   );
 }
 
