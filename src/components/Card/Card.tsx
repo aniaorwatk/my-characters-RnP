@@ -15,7 +15,6 @@ export default function Card({img,characterName,information}:ICardType) {
             <p className="card__information-name">{characterName}</p>
             <p>{information}</p>
             </div>
-
         </div>
     )
 }
