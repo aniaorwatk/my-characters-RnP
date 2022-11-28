@@ -15,7 +15,9 @@ const Section = () => {
     );
   });
 
-  return <div className="section">{cards}</div>;
+  return <div className="section">{cards} 
+
+  </div>;
 };
 
 export default Section;

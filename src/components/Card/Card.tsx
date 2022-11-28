@@ -1,5 +1,3 @@
-import React from "react";
-// import img from "../../../public/images/"
 import "./Card.scss";
 
 interface ICardType{
@@ -12,10 +10,12 @@ interface ICardType{
 export default function Card({img,characterName,information}:ICardType) {
     return (
         <div className="card">
-            <img src={`../../../public/images/${img}`} className="card__image" />
-
-            <p>{characterName}</p>
+            <img src={img} className="card__image" />
+            <div className="card__information">
+            <p className="card__information-name">{characterName}</p>
             <p>{information}</p>
+            </div>
+
         </div>
     )
 }
