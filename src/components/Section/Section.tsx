@@ -6,6 +6,8 @@ const Section = () => {
   const cards = dataCharacters.map((item) => {
     return (
       <Card
+      death={item.death}
+      game={item.game}
       id={item.id}
         key={item.id}
         img={item.src}

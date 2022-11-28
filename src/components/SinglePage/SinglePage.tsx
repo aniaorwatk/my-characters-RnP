@@ -12,10 +12,18 @@ const SinglePage = () => {
       <div className="singlePage__data">
         <p> Name Character: {dataAndIndex.character}</p>
         <p> History</p>
-        <p> Personality traits: {dataAndIndex.history.personality_traits}</p>
-        <p> Ideals: {dataAndIndex.history.ideals}</p>
-        <p> Bonds: {dataAndIndex.history.bonds}</p>
-        <p> Flaws: {dataAndIndex.history.flaws}</p>
+
+        {dataAndIndex.game === "dnd" && (
+          <div>
+            <p>
+              Personality traits: {dataAndIndex.history.personality_traits}
+            </p>
+            <p> Ideals: {dataAndIndex.history.ideals}</p>
+            <p> Bonds: {dataAndIndex.history.bonds}</p>
+            <p> Flaws: {dataAndIndex.history.flaws}</p>
+          </div>
+        )}
+
         <p>{dataAndIndex.history.history}</p>
       </div>
     </div>

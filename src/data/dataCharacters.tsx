@@ -45,7 +45,24 @@ export default [
         },
     },
 
-            // {
+            {
+        id: 3,
+        character: "LUNA",
+        src: "https://images92.fotosik.pl/634/ba88b64387a4d385med.jpg",
+    information: "Human - Fighter",
+        game:"dnd",
+        death:  true,
+        history:{
+            personality_traits: "życie jej nie oszczędzało dlatego w pierwszej kolejności myśli o sobie i o tym aby jej było dobrze, jest osobą zamkniętą w sobie- rzadko mówi o sobie i o uczuciach, traktuje innych chłodno, stara się nie wpadać w niepotrzebne kłopoty",
+            ideals: "Przeżyć życie tak aby się dobrze bawić i niczego nie żałować. ",
+            bonds: "Ingo.",
+            flaws: "Uważa, że najlepszy sposób na rozwiązanie problemów to rozwiązanie ich siłowo.",
+            history: "Jej historia jest krótka. Rodzice nie mieli ochoty się nią zajmować. Dlatego oddali ją pod opiekę do wujostwa. Lecz oni traktowali ją jeszcze gorzej, nie poświęcali jej czasu, nie zwracali uwagi czy ma co jeść czy ma się w co ubrać. Potrafili ją tylko zbić gdy się im coś nie spodobało. Luna po życiu kilku lat w takim piekle- powiedziała sobie: dość tego! Nie posiadała nic, poza pamiątkowym medalionem od rodziców. Gdy było jej naprawdę źle, to na poprawę nastroju, gdy nikt nie widział, brała medalion i przeklinała rodziców, życząc im jak najgorzej. A więc zabrała go ze sobą wraz z odrobiną chleba, który znalazła w kuchni i wyruszyła w świat. Tułała się od miejsca do miejsca walcząc o przetrwanie. Nieraz uczestniczyła w bójkach i w taki też sposób natknęła się na Inga. Pobiła się z jakimiś chłopakami, ponieważ Ci się z niej naśmiewali. Ingo widząc, że jakaś dziewczynka dostaje łomot od większych od niej chłopaków. Wtrącił się i pomógł jej. W pierwszej chwili Luna była bardzo nie miła dla Inga, ponieważ nie rozumiała, że ktoś może być dla niej bezinteresownie dobry, miły. Ingo postanowił pomóc dziewczynce i widząc, że ta pała strachem i niechęcią do niego, zaproponował jej aby ta mu w czymś pomogła w zamian za miskę strawy. Luna, która nic nie jadła od dwóch dni bez zastanowienia się zgodziła. Ingo nie miał żadnych dzieci, a widząc, że Luna ma w sobie pełno gniewu, żalu, chęci do walki i rozrabiania. Zaczął rozmyślać i przeszła mu przez głowę myśl, że to może sprowadzić ją na złą drogę, dlatego zaproponował jej układ, że On nauczy ją walczyć i powstrzymywać gniew a Ona za to mu czasem w czymś pomoże.  Luna nie mając żadnej lepszej opcji zgodziła się. I tak oto Luna pomagała Ingo, a on ją uczył. Z czasem Luna postanowiła wykorzystywać swoje umiejętności i zaczęła wykonywać różne zlecenia za pieniądze."
+
+        },
+    },
+
+                // {
     //     id:
     //     character:
     //     src:
@@ -61,5 +78,6 @@ export default [
 
     //     },
     // },
+    
     
 ]
