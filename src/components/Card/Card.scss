@@ -1,27 +1,45 @@
 @import "../../scss/Main";
 
 .card {
-    width: 175px;
-    font-size: 12px;
-    flex: 0 0 auto;      
-    display: flex;          
-    flex-direction: column; 
-    border: 2px solid black;
-    margin:10px;
-    border-radius: 10px;
-    overflow: hidden;
-    &__information{
-   margin: 5px;
-        &-name{
-            font-family: "Moon Dance", cursive;
-            font-weight: bold;
-        }
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  &__information {
+    margin: 5px;
+    &-name {
+      font-family: "Moon Dance", cursive;
+      font-weight: bold;
     }
+  }
+  &__deathCharacter {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    left: 80%;
+  }
 }
 
+.card:hover {
+  opacity: 0.8;
+}
 
+.dndBorder {
+  border: 2px solid rgb(211, 65, 73);
+}
+
+.cthulhuBorder {
+  border: 2px solid darkolivegreen;
+}
 
 .card__image {
-    width: 100%;
- 
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
 }
