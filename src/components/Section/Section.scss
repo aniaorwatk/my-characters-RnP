@@ -2,6 +2,7 @@
 
 .section {
   display: flex;
+  flex-wrap: wrap;
   width: 100vw;
   gap: 15px;
   padding: 15px;

@@ -1,1 +1,55 @@
 @import "../../scss/Main";
+
+.singlePageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  &__img {
+    max-width: 50vh;
+    max-height: 50vh;
+    border-radius: 9px;
+    box-shadow: 4px 4px 4px grey;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-textDnd{
+        width: 70%;
+        text-align: justify; 
+        margin: 10px 0;
+        &--title{
+            font-weight: bold;
+        }
+    }
+    &-textCharacter {
+      margin: 5px;
+      font-size: $font-size-L;
+      font-family: "Moon Dance", cursive;
+    }
+    &-titleHistory {
+      font-size: $font-size-M;
+      position: relative;
+      margin-bottom: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: gray;
+        transform: translateX(50%);
+        top: 30px;
+      }
+    }
+    &-history {
+      width: 70%;
+      text-align: justify;
+    }
+  }
+}

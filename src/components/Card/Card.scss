@@ -16,18 +16,18 @@
       font-weight: bold;
     }
   }
-  &__deathCharacter{
+  &__deathCharacter {
     position: absolute;
     width: 20px;
     height: 100%;
     background-color: black;
     opacity: 0.6;
-  left: 80%;
+    left: 80%;
   }
 }
 
-.card:hover{
-    opacity: 0.8;
+.card:hover {
+  opacity: 0.8;
 }
 
 .dndBorder {
