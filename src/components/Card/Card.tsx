@@ -28,7 +28,7 @@ export default function Card({
       {deathCharacter && <div className="card__deathCharacter"></div>}
         <img  src={img ? img : noImage} className="card__image" alt={characterName} />
         <div className="card__information">
-          <p className="card__information-name">{characterName}</p>
+          <p className="card__information-name">{characterName.toLocaleUpperCase()}</p>
           <p>{information}</p>
         </div>
       </div>

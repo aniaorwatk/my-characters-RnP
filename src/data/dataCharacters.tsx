@@ -89,7 +89,23 @@ export default [
       },
   },
 
-    // {
+    {
+      id: 5,
+      character: "płomyczek",
+      src: "",
+  information: "Sera Luma - Wild Sorcerer",
+      game: "dnd",
+      death: false,
+      history:{
+          personality_traits: "indywidualista, dba głównie o siebie i o to aby jemu było dobrze",
+          ideals: "chce żyć w spokoju i bez większych problemów",
+          bonds: "nienawidzi dziadków, szanuje i lubi Doriana, który ją wychował",
+          flaws: "leniwa, nie robi więcej niż musi",
+          history: " 	Nie pamiętam zbyt dobrze miejsca w którym się urodziłam i w którym mieszkałam gdy byłam pisklęciem, posiadam tylko kilka wspomnień z tego okresu.  Jednym z nich są ciągłe kłótnie między moimi dziadkami ze strony matki a moim ojcem. Dziadkom nie podobało się to, że mój ojciec nakłonił moją matkę, aby zanieść jajo (w którym byłam ja) jakimś bóstwom, aby te obdarzyły je mocą, tak samo jak jego rodzice uczynili z nimi. Podczas obdarowywania mocą jaja, moja matka zmarła. Do tej pory gdy próbuje ich sobie przypomnieć to nie widzę ich twarzy, tylko słyszę w głowie krzyki: magia zabija, ty i ten przeklęty bachor jesteście mordercami. Dziadkowie mieli do mnie bardzo chłodny stosunek i często mnie zamykali w ciemnym pomieszczeniu gdy użyłam magii. Ojciec dał mi kiedyś kryształ, dzięki którego mogłam używać swoich mocy, dziadkowie często mi go chowali ale tata zawsze go znajdywał i mi go oddawał. Jednym słowem  byli dla mnie okrutni i podli. Tata pewnego wieczoru podszedł do mnie z walizką i powiedział: odchodzimy. Droga była dla mnie męczarnią. Ciągnęła się przez las, pamiętam ból skrzydeł i nóg. Ponieważ gdy nie mogłam już lecieć to tata kazał mi iść pieszo. Było ciemno, padał deszcz, prosiłam tatę o odpoczynek, lecz ten się nie zgadzał i mówił, że gdy dotrzemy do portu to wtedy odpoczniemy. Nagle rozpętała się burza i znikąd wyskoczyły nagle jakieś zamaskowane postacie. Zaczęły nad moją głową latać błyskawice i strzały… I choć bardzo staram się przypomnieć, co  się wtedy stało,  to nie mogę. Obudziłam się brudna, głodna i obolała, nie mogłam nigdzie dostrzec taty. Wołałam go, lecz mi nie odpowiadał. Nie było nigdzie jego, ani jego rzeczy. Jedyne co miała to swój kryształ. Chciałam aby kryształ odnalazł tatę, tak jak tata zawsze znajdywał kryształ lecz nic to nie dało. Po kilku godzinach mojej tułaczki naprzemiennej z atakami płaczu, natrafiłam na dziwny budynek. Był bardzo kolorowy, każda deska z którego był zbudowany miała inny kolor. Nie mając nic do stracenia weszłam do środka. W pomieszczeniu było dużo dziwnych rzeczy.  DORIAN stał przy stole i wertował jakieś książki. Spojrzał na mnie i zapytał się w czym może mi pomóc. Nie byłam wstanie wydobyć z siebie słowa, tylko jakieś piski. Roześmiał się i upuścił książkę, a ja ze strachu ją podpaliłam. Pierwsze się wystraszył, ale po ugaszeniu płomienia wielkości śliwki, podszedł do mnie i z uśmiechem na twarzy powiedział, że takiego marnego maga to jeszcze w życiu nie widział, który nawet porządnego płomienia nie potrafi wyczarować, i skoro się mu się nie przedstawiłam to będzie mnie nazywał Płomyczkiem. I tak oto poznałam jego, był bardzo mądrym Strigiem. Zostałam z nim. Prowadził sklep z różnościami na skrzyżowaniu gdzie jedna droga prowadziła do portu. Po pewnym czasie jego usługi rozszerzyły się o usługi magiczne, które ja wykonywałam, czasami lepiej, czasami gorzej. Ale naszczęście usługobiorcy zawsze wybaczali mi niepowodzenia, potrafiłam ich zawsze przekonać, że to nie była moja wina. Tak oto poznałam na swojej drodze dużo ciekawych osób, słyszałam dużo ciekawych historii. ",
+      },
+  },
+
+      // {
   //     id:
   //     character:
   //     src:
