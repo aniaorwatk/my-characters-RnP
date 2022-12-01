@@ -1,11 +1,5 @@
 import dataCharacters from "../../data/dataCharacters";
 
-
-
-// export const filteredProducts = dataCharacters.filter((character) => {
-//     return character.character.toLowerCase().includes(query.toLowerCase());
-    
-//   });
   export const filterDnD = dataCharacters.filter((character) => {
     return character.game.includes("dnd");
   });
@@ -21,3 +15,4 @@ import dataCharacters from "../../data/dataCharacters";
   export const filterDeathCharacters = dataCharacters.filter((character)=>{
     return character.death === true;
   })
+
