@@ -8,27 +8,52 @@ const SinglePage = () => {
   const idCharacter = para.id as unknown as number;
   const index: number = idCharacter as number;
   const dataAndIndex = dataCharacters[index];
+  const noImage = "https://ogrod.ukw.edu.pl/img/no-image-person.png";
   return (
     <div className="singlePageBox">
-      <img className="singlePageBox__img"src={dataAndIndex.src} alt={dataAndIndex.character} />
+      <img
+        className="singlePageBox__img"
+        src={dataAndIndex.src ? dataAndIndex.src : noImage}
+        alt={dataAndIndex.character}
+      />
       <div className="singlePageBox__data">
-        <p className="singlePageBox__data-textCharacter">{dataAndIndex.character}</p>
+        <p className="singlePageBox__data-textCharacter">
+          {dataAndIndex.character.toLocaleUpperCase()}
+        </p>
         {dataAndIndex.game === "dnd" && (
-          <div  className="singlePageBox__data-textDnd">
-            <p >
-              <span className="singlePageBox__data-textDnd--title">{labels.singlePage.titlePersonalityTraits}</span> {dataAndIndex.history.personality_traits}
+          <div className="singlePageBox__data-textDnd">
+            <p>
+              <span className="singlePageBox__data-textDnd--title">
+                {labels.singlePage.titlePersonalityTraits}
+              </span>
+              {dataAndIndex.history.personality_traits}
             </p>
-            <p> <span className="singlePageBox__data-textDnd--title">{labels.singlePage.titleIdeals}</span> {dataAndIndex.history.ideals}</p>
-            <p> <span className="singlePageBox__data-textDnd--title">{labels.singlePage.titleBonds}</span> {dataAndIndex.history.bonds}</p>
-            <p> <span className="singlePageBox__data-textDnd--title">{labels.singlePage.titleFlaws}</span> {dataAndIndex.history.flaws}</p>
+            <p>
+              <span className="singlePageBox__data-textDnd--title">
+                {labels.singlePage.titleIdeals}
+              </span>
+              {dataAndIndex.history.ideals}
+            </p>
+            <p>
+              <span className="singlePageBox__data-textDnd--title">
+                {labels.singlePage.titleBonds}
+              </span>
+              {dataAndIndex.history.bonds}
+            </p>
+            <p>
+              <span className="singlePageBox__data-textDnd--title">
+                {labels.singlePage.titleFlaws}
+              </span>
+              {dataAndIndex.history.flaws}
+            </p>
           </div>
         )}
-
-        <p className="singlePageBox__data-titleHistory"> {labels.singlePage.titleHistory}</p>
-
-
-
-        <p className="singlePageBox__data-history">{dataAndIndex.history.history}</p>
+        <p className="singlePageBox__data-titleHistory">
+          {labels.singlePage.titleHistory}
+        </p>
+        <p className="singlePageBox__data-history">
+          {dataAndIndex.history.history}
+        </p>
       </div>
     </div>
   );
