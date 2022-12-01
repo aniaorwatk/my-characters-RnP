@@ -1,8 +1,9 @@
-import { Key, useEffect, useState } from "react";
+import { useState } from "react";
 import dataCharacters from "../../data/dataCharacters";
 import Card from "../Card/Card";
 import Search from "../Search";
 import "./Section.scss";
+import { filterCthulhu, filterDeathCharacters, filterDnD, filterLiveCharacters } from "./SectionHandler";
 
 interface ISectionType{
   death: boolean; 
@@ -15,36 +16,19 @@ interface ISectionType{
 
 const Section = () => {
   const [query, setQuery] = useState<string>("");
-  const [f, setf]= useState<ISectionType[]>()
-
-
-
-  const searchCharacter = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(event.target.value);
-    setf(filteredProducts)
-  };
 
   const filteredProducts = dataCharacters.filter((character) => {
     return character.character.toLowerCase().includes(query.toLowerCase());
-  });
-  const filterDnD = dataCharacters.filter((character) => {
-    return character.game.includes("dnd");
-  });
+  }); 
+  const [filterCharacters, setFilterCharacters]= useState<ISectionType[]>(filteredProducts)
 
-  const filterC = dataCharacters.filter((character) => {
-    return character.game.includes("cthulhu");
-  });
-
-  useEffect(()=>{
-    return setf(filteredProducts);
-  },[])
+  const searchCharacter = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setFilterCharacters(prevfilterCharacters =>  prevfilterCharacters = filteredProducts)
+setQuery(event.target.value);
+  };
 
 
-let filterX = filteredProducts
-console.log(filterX)
-
-  let cards = (f || []).map((item) => {
-    {
+  let cards = (filterCharacters).map((item) => {
       return (
         <Card
           death={item.death}
@@ -56,14 +40,19 @@ console.log(filterX)
           information={item.information}
         />
       );
-    }
   });
+
+
 
   return (
     <>
       <Search searchCharacter={searchCharacter} query={query} />
-      <button type="button" onClick={()=> setf(filterDnD) }>onlyDnD</button>
-      <button type="button" onClick={()=> setf(filterC)  }>onlyDnD</button>
+      <button type="button" onClick={()=> setFilterCharacters(filterDnD) }>onlyDnD</button>
+      <button type="button" onClick={()=> setFilterCharacters(filterCthulhu)  }>onlyC</button>
+      <button type="button" onClick={()=> setFilterCharacters(filteredProducts)  }>allCharacters</button>
+      <button type="button" onClick={()=> setFilterCharacters(filterLiveCharacters)  }>Live Characters</button>
+      <button type="button" onClick={()=> setFilterCharacters(filterDeathCharacters)  }>Death Characters</button>
+
       <div className="section">{cards}</div>
     </>
   );
