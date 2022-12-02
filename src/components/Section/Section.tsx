@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import {  useState } from "react";
 import dataCharacters from "../../data/dataCharacters";
 import { labels } from "../../labels";
 import BtnFilter from "../BtnFilter/BtnFilter";
@@ -37,7 +37,7 @@ const Section = () => {
   };
 
   let cards = filterCharacters.map((item) => {
-    const {death, game, id, src, character, information} =item
+    const { death, game, id, src, character, information } = item;
     return (
       <Card
         death={death}
@@ -54,53 +54,31 @@ const Section = () => {
   return (
     <>
       <Search searchCharacter={searchCharacter} query={query} />
-
-
-      <BtnFilter labelBtn={labels.section.labelBtnDnD}  btnColor={colorBtn.colorDnd} setFilterCharacters={setFilterCharacters} nameFilter={filterDnD}/>
-
-
-      <BtnFilter labelBtn={""} btnColor={""} setFilterCharacters={function (value: SetStateAction<JSX.Element>): void {
-        throw new Error("Function not implemented.");
-      } } nameFilter={undefined}/>
-      
-
-       {/* <BtnFilter labelBtn={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } btnColor={""}/>
-       {/* <BtnFilter labelBtn={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } btnColor={""}/>
-       <BtnFilter labelBtn={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } btnColor={""}/>
-       <BtnFilter labelBtn={""} onClick={function (): void {
-        throw new Error("Function not implemented.");
-      } } btnColor={""}/> */} */}
-      <button type="button" onClick={() => setFilterCharacters(filterDnD)}>
-        onlyDnD
-      </button>
-      <button type="button" onClick={() => setFilterCharacters(filterCthulhu)}>
-        onlyC
-      </button>
-      <button
-        type="button"
+      <BtnFilter
+        labelBtn={labels.section.labelBtnAllCharacters}
+        btnColor={colorBtn.colorAll}
         onClick={() => setFilterCharacters(filteredProducts)}
-      >
-        allCharacters
-      </button>
-      <button
-        type="button"
+      />
+      <BtnFilter
+        labelBtn={labels.section.labelBtnDnD}
+        btnColor={colorBtn.colorDnd}
+        onClick={() => setFilterCharacters(filterDnD)}
+      />
+      <BtnFilter
+        labelBtn={labels.section.labelBtnCthulhu}
+        btnColor={colorBtn.colorCthulhu}
+        onClick={() => setFilterCharacters(filterCthulhu)}
+      />
+      <BtnFilter
+        labelBtn={labels.section.labelBtnLivingCharacters}
+        btnColor={colorBtn.colorLiving}
         onClick={() => setFilterCharacters(filterLivingCharacters)}
-      >
-        Live Characters
-      </button>
-      <button
-        type="button"
+      />
+      <BtnFilter
+        labelBtn={labels.section.labelBtnDeadCharacters}
+        btnColor={colorBtn.colorDead}
         onClick={() => setFilterCharacters(filterDeadCharacters)}
-      >
-        Death Characters
-      </button>
-
+      />
       <div className="section">{cards}</div>
     </>
   );

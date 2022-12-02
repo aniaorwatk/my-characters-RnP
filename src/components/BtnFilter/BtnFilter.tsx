@@ -1,25 +1,16 @@
-import { ISectionType } from "../Section/Section";
 import "./BtnFilter.scss";
 
-interface IBtnFilterType{
-    labelBtn: string,
-    // onClick: ()=> void ,
-    btnColor:string,
-    setFilterCharacters: React.Dispatch<React.SetStateAction<ISectionType[]>>,
-    nameFilter: JSX.Element,
-
+interface IBtnFilterType {
+  labelBtn: string;
+  onClick: () => void;
+  btnColor: string;
 }
-const BtnFilter =({labelBtn,btnColor, setFilterCharacters,nameFilter}:IBtnFilterType)=>{
-    <button
-        type="button"
-        className={`btnFilter ${btnColor}`}
-        onClick={()=>setFilterCharacters(nameFilter)}
-      >
-        {labelBtn}
-      </button>
-}
+const BtnFilter = ({ labelBtn, btnColor, onClick }: IBtnFilterType) => {
+  return (
+    <button type="button" className={`btnFilter ${btnColor}`} onClick={onClick}>
+      {labelBtn}
+    </button>
+  );
+};
 
-export default BtnFilter
-
-
-
+export default BtnFilter;

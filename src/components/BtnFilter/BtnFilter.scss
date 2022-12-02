@@ -1,1 +1,33 @@
 @import "../../scss/Main";
+
+.btnFilter {
+  padding: 5px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+  color: $color-text-white;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.9;
+  }
+
+}
+
+.colorDnD {
+  background-color: $color-DnDdark-purple;
+
+}
+
+.colorCthulhu{
+    background-color: $color-Cdark-sea;
+}
+
+.colorAll{
+    background-color: $color-text-names;
+}
+.colorDead{
+    background-color: $color-text-black;
+}
+.colorLiving{
+    color:$color-text-black;
+}
