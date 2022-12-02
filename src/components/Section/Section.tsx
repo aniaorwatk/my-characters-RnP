@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import dataCharacters from "../../data/dataCharacters";
+import { labels } from "../../labels";
+import BtnFilter from "../BtnFilter/BtnFilter";
 import Card from "../Card/Card";
 import Search from "../Search";
 import "./Section.scss";
 import {
+  colorBtn,
   filterCthulhu,
-  filterDeathCharacters,
+  filterDeadCharacters,
   filterDnD,
-  filterLiveCharacters,
+  filterLivingCharacters,
 } from "./SectionHandler";
 
-interface ISectionType {
+export interface ISectionType {
   death: boolean;
   game: string;
   id: number;
@@ -51,6 +54,28 @@ const Section = () => {
   return (
     <>
       <Search searchCharacter={searchCharacter} query={query} />
+
+
+      <BtnFilter labelBtn={labels.section.labelBtnDnD}  btnColor={colorBtn.colorDnd} setFilterCharacters={setFilterCharacters} nameFilter={filterDnD}/>
+
+
+      <BtnFilter labelBtn={""} btnColor={""} setFilterCharacters={function (value: SetStateAction<JSX.Element>): void {
+        throw new Error("Function not implemented.");
+      } } nameFilter={undefined}/>
+      
+
+       {/* <BtnFilter labelBtn={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } btnColor={""}/>
+       {/* <BtnFilter labelBtn={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } btnColor={""}/>
+       <BtnFilter labelBtn={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } btnColor={""}/>
+       <BtnFilter labelBtn={""} onClick={function (): void {
+        throw new Error("Function not implemented.");
+      } } btnColor={""}/> */} */}
       <button type="button" onClick={() => setFilterCharacters(filterDnD)}>
         onlyDnD
       </button>
@@ -65,13 +90,13 @@ const Section = () => {
       </button>
       <button
         type="button"
-        onClick={() => setFilterCharacters(filterLiveCharacters)}
+        onClick={() => setFilterCharacters(filterLivingCharacters)}
       >
         Live Characters
       </button>
       <button
         type="button"
-        onClick={() => setFilterCharacters(filterDeathCharacters)}
+        onClick={() => setFilterCharacters(filterDeadCharacters)}
       >
         Death Characters
       </button>
