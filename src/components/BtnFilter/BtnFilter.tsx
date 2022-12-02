@@ -3,20 +3,26 @@ import "./BtnFilter.scss";
 
 interface IBtnFilterType{
     labelBtn: string,
-    // onClick: ()=> void ,
+    onClick: ()=> void ,
     btnColor:string,
-    setFilterCharacters: React.Dispatch<React.SetStateAction<ISectionType[]>>,
-    nameFilter: JSX.Element,
-
+    // setFilterCharacters: React.Dispatch<React.SetStateAction<ISectionType []>>,
+    // nameFilter: { id: number; character: string; src: string; information: string; game: string; death: boolean; history: { personality_traits: string; ideals: string; bonds: string; flaws: string; history: string; }; }[],
+   
 }
-const BtnFilter =({labelBtn,btnColor, setFilterCharacters,nameFilter}:IBtnFilterType)=>{
-    <button
+const BtnFilter =({labelBtn,btnColor, onClick
+    
+    // setFilterCharacters,nameFilter
+
+
+}:IBtnFilterType)=>{
+  return(  <button
         type="button"
         className={`btnFilter ${btnColor}`}
-        onClick={()=>setFilterCharacters(nameFilter)}
+        onClick={onClick}
       >
         {labelBtn}
       </button>
+  )
 }
 
 export default BtnFilter
