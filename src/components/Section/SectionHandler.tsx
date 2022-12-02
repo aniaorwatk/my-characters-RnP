@@ -18,7 +18,7 @@ export const filterDeadCharacters = dataCharacters.filter((character) => {
 
 export const colorBtn = {
   colorDnd: "colorDnD",
-  colorCthulhu: "colorCthhlhu",
+  colorCthulhu: "colorCthulhu",
   colorAll: "colorAll",
   colorDead: "colorDead",
   colorLiving: "colorLiving",

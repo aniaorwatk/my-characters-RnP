@@ -79,7 +79,6 @@ const Section = () => {
         btnColor={colorBtn.colorDead}
         onClick={() => setFilterCharacters(filterDeadCharacters)}
       />
-
       <div className="section">{cards}</div>
     </>
   );
