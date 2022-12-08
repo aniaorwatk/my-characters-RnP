@@ -1,5 +1,4 @@
-import {  useState } from "react";
-import dataCharacters from "../../data/dataCharacters";
+import { useEffect, useState } from "react";
 import { labels } from "../../labels";
 import BtnFilter from "../BtnFilter/BtnFilter";
 import Card from "../Card/Card";
@@ -10,6 +9,7 @@ import {
   filterCthulhu,
   filterDeadCharacters,
   filterDnD,
+  filteredProducts,
   filterLivingCharacters,
 } from "./SectionHandler";
 
@@ -23,18 +23,16 @@ export interface ISectionType {
 }
 
 const Section = () => {
-  const [query, setQuery] = useState<string>("");
-
-  const filteredProducts = dataCharacters.filter((character) => {
-    return character.character.toLowerCase().includes(query.toLowerCase());
-  });
-  const [filterCharacters, setFilterCharacters] =
-    useState<ISectionType[]>(filteredProducts);
+  const [query, setQuery] = useState("");
+  const [filterCharacters, setFilterCharacters] = useState<ISectionType[]>([]);
 
   const searchCharacter = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFilterCharacters(filteredProducts);
     setQuery(event.target.value);
   };
+
+  useEffect(() => {
+    setFilterCharacters(filteredProducts(query));
+  }, [query]);
 
   let cards = filterCharacters.map((item) => {
     const { death, game, id, src, character, information } = item;
@@ -57,7 +55,7 @@ const Section = () => {
       <BtnFilter
         labelBtn={labels.section.labelBtnAllCharacters}
         btnColor={colorBtn.colorAll}
-        onClick={() => setFilterCharacters(filteredProducts)}
+        onClick={() => setFilterCharacters(filteredProducts(query))}
       />
       <BtnFilter
         labelBtn={labels.section.labelBtnDnD}
@@ -84,4 +82,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Section
