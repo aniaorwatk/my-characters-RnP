@@ -1,6 +1,7 @@
 {
   "name": "my-characters-rnp",
   "version": "0.1.0",
+  "homepage": "https://aniaorwatk.github.io/my-characters-RnP",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
