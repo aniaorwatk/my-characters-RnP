@@ -11,11 +11,14 @@ const SinglePage = () => {
   const dataAndIndex = dataCharacters[index];
   const noImage = "https://ogrod.ukw.edu.pl/img/no-image-person.png";
 
+  // dataCharacters[idCharacter]
+
   return (
-    <div className="singlePageBox">
-      <img
+    <></>
+    // <div className="singlePageBox">
+      /* <img
         className="singlePageBox__img"
-        src={dataAndIndex.src ? dataAndIndex.src : noImage}
+        src={dataCharacters[idCharacter].src ? dataAndIndex.src : noImage}
         alt={dataAndIndex.character}
       />
       <div className="singlePageBox__data">
@@ -57,7 +60,7 @@ const SinglePage = () => {
           {dataAndIndex.history.history}
         </p>
       </div>
-    </div>
+    </div> */
   );
 };
 
