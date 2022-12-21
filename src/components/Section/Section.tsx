@@ -29,12 +29,9 @@ const Section = () => {
     setFilterCharacters(filteredProducts(query));
   }, [query]);
 
-  console.log()
-
   let cards = filterCharacters.map((item) => {
     const { death, game, id, src, character, information } = item;
 
-    console.log(item.id)
     return (
       <Card
         death={death}

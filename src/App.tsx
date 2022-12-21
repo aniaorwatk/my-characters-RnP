@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import SinglePage from "./components/SinglePage/SinglePage";
 
-function App() {
+const App = () => {
   return (
     <>
       <Routes>

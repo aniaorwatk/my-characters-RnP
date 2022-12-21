@@ -11,8 +11,6 @@ const SinglePage = () => {
   const dataAndIndex = dataCharacters[index];
   const noImage = "https://ogrod.ukw.edu.pl/img/no-image-person.png";
 
-console.log(dataCharacters)
-
   return (
 
     <div className="singlePageBox">
