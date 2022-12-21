@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/my-characters-RnP" element={<MainPage />} />
         <Route path="/:id" element={<SinglePage />} />
       </Routes>
     </>
