@@ -1,0 +1,16 @@
+@import "../../scss/Main";
+
+.menuFilter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   margin: 15px 0; 
+}
+
+@media only screen and (min-width: $breakpointL) {
+    .menuFilter{
+        margin-left: 15px;
+        justify-content: space-between;
+    }
+  }

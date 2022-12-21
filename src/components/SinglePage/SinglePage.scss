@@ -18,19 +18,23 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    &-textDnd{
-        width: 70%;
-        text-align: justify; 
-        margin: 10px 0;
-        &--title{
-            font-weight: bold;
-        }
+
+    &-textDnd {
+      width: 70%;
+      text-align: justify;
+      margin: 10px 0;
+
+      &--title {
+        font-weight: bold;
+      }
     }
+
     &-textCharacter {
       margin: 5px;
       font-size: $font-size-L;
       font-family: "Moon Dance", cursive;
     }
+
     &-titleHistory {
       font-size: $font-size-M;
       position: relative;
@@ -47,6 +51,7 @@
         top: 30px;
       }
     }
+
     &-history {
       width: 70%;
       text-align: justify;

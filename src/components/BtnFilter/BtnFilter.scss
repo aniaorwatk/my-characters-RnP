@@ -1,33 +1,38 @@
 @import "../../scss/Main";
 
 .btnFilter {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px 0;
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-  color: $color-text-white;
-  border-radius: 5px;
-  &:hover {
-    opacity: 0.9;
-  }
-
+  font-weight: bold;
+  border: none;
+  background-color: $color-text-white;
+  cursor: pointer;
 }
 
-.colorDnD {
-  background-color: $color-DnDdark-purple;
-
+.colorDnD:hover {
+  color: $color-DnDdark-purple;
+  border-bottom: 1px solid $color-DnDdark-purple;
 }
 
-.colorCthulhu{
-    background-color: $color-Cdark-sea;
+.colorCthulhu:hover {
+  color: $color-Cdark-sea;
+  border-bottom: 1px solid $color-Cdark-sea;
 }
 
-.colorAll{
-    background-color: $color-text-names;
+.colorAll:hover {
+  color: $color-text-names;
+  border-bottom: 1px solid $color-text-names;
 }
-.colorDead{
-    background-color: $color-text-black;
+
+.colorDead:hover {
+  color: $color-text-black;
+  border-bottom: 1px solid
 }
-.colorLiving{
-    color:$color-text-black;
+
+.colorLiving:hover {
+  color: gray;
+  border-bottom: 1px solid gray;
 }

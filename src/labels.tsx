@@ -3,12 +3,12 @@ export const labels = {
     title: "My characters in pen and paper games",
   },
   singlePage: {
-    nameCharacter: "Name Character:",
+    nameCharacter: "Name Character: ",
     titleHistory: "History",
-    titlePersonalityTraits: "Personality traits:",
-    titleIdeals: "Ideals:",
-    titleBonds: "Bonds:",
-    titleFlaws: "Flaws:",
+    titlePersonalityTraits: "Personality traits: ",
+    titleIdeals: "Ideals: ",
+    titleBonds: "Bonds: ",
+    titleFlaws: "Flaws: ",
   },
   section:{
     labelBtnDnD: "Only D&D",
