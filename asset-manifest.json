@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-characters-RnP/static/css/main.d2f68a78.css",
-    "main.js": "/my-characters-RnP/static/js/main.0b477e29.js",
-    "static/media/diceHeader.jpg": "/my-characters-RnP/static/media/diceHeader.92d0a4645758611695cd.jpg",
-    "index.html": "/my-characters-RnP/index.html",
-    "main.d2f68a78.css.map": "/my-characters-RnP/static/css/main.d2f68a78.css.map",
-    "main.0b477e29.js.map": "/my-characters-RnP/static/js/main.0b477e29.js.map"
+    "main.css": "/my-characters-rnp/static/css/main.85d02eed.css",
+    "main.js": "/my-characters-rnp/static/js/main.0b477e29.js",
+    "static/media/diceHeader.jpg": "/my-characters-rnp/static/media/diceHeader.92d0a4645758611695cd.jpg",
+    "index.html": "/my-characters-rnp/index.html",
+    "main.85d02eed.css.map": "/my-characters-rnp/static/css/main.85d02eed.css.map",
+    "main.0b477e29.js.map": "/my-characters-rnp/static/js/main.0b477e29.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2f68a78.css",
+    "static/css/main.85d02eed.css",
     "static/js/main.0b477e29.js"
   ]
 }
