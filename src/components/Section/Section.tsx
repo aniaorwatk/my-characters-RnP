@@ -1,18 +1,11 @@
 import { useEffect, useState } from "react";
-import { labels } from "../../labels";
-import BtnFilter from "../BtnFilter/BtnFilter";
 import Card from "../Card/Card";
 import Filter from "../Filter/Filter";
 import MenuFilter from "../MenuFilter/MenuFilter";
-import Search from "../Search";
+import Search from "../Search/Search";
 import "./Section.scss";
 import {
-  colorBtn,
-  filterCthulhu,
-  filterDeadCharacters,
-  filterDnD,
   filteredProducts,
-  filterLivingCharacters,
 } from "./SectionHandler";
 
 export interface ISectionType {

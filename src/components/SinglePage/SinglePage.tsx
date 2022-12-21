@@ -4,11 +4,13 @@ import { labels } from "../../labels";
 import "./SinglePage.scss";
 
 const SinglePage = () => {
+  
   const para = useParams();
   const idCharacter = para.id as unknown as number;
   const index: number = idCharacter as number;
   const dataAndIndex = dataCharacters[index];
   const noImage = "https://ogrod.ukw.edu.pl/img/no-image-person.png";
+
   return (
     <div className="singlePageBox">
       <img

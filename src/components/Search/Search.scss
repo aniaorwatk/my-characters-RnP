@@ -1,0 +1,9 @@
+@import "../../scss/Main";
+
+.inputSearch{
+    width: 300px;
+    font-size: $font-size-S;
+    border: 2px solid $color-DnDlight-purple;
+    border-radius: 5px;
+    height: 40px;
+}

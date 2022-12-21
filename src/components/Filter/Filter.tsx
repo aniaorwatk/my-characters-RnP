@@ -11,7 +11,7 @@ interface IFilterType {
 
 const Filter = ({ setFilterCharacters, query }: IFilterType) => {
     return (
-        <>
+        < div className="filter">
             <BtnFilter
                 labelBtn={labels.section.labelBtnAllCharacters}
                 btnColor={colorBtn.colorAll}
@@ -37,7 +37,8 @@ const Filter = ({ setFilterCharacters, query }: IFilterType) => {
                 btnColor={colorBtn.colorDead}
                 onClick={() => setFilterCharacters(filterDeadCharacters)}
             />
-        </>
+        </div>
     )
 }
+
 export default Filter
