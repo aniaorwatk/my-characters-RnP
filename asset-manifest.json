@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-characters-RnP/static/css/main.d2f68a78.css",
-    "main.js": "/my-characters-RnP/static/js/main.85dabbd3.js",
+    "main.js": "/my-characters-RnP/static/js/main.a1367317.js",
     "static/media/diceHeader.jpg": "/my-characters-RnP/static/media/diceHeader.92d0a4645758611695cd.jpg",
     "index.html": "/my-characters-RnP/index.html",
     "main.d2f68a78.css.map": "/my-characters-RnP/static/css/main.d2f68a78.css.map",
-    "main.85dabbd3.js.map": "/my-characters-RnP/static/js/main.85dabbd3.js.map"
+    "main.a1367317.js.map": "/my-characters-RnP/static/js/main.a1367317.js.map"
   },
   "entrypoints": [
     "static/css/main.d2f68a78.css",
-    "static/js/main.85dabbd3.js"
+    "static/js/main.a1367317.js"
   ]
 }
