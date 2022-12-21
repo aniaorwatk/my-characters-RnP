@@ -17,3 +17,4 @@ const Search = ({ query, searchCharacter }: ISearchType) => {
   };
   
   export default Search;
+  
