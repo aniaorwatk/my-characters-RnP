@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="menuFilter"
+    >
+      <div>
+        xxxxx
+      </div>
+      <div
+        class="menuFilter__btnBox"
+      >
+        <div>
+          xxxxx
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
