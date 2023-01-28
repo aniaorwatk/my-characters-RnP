@@ -3,7 +3,7 @@ import "./Card.scss";
 
 interface ICardType {
   id: number;
-  img: string;
+  img?: string;
   characterName: string;
   information: string;
   game: string;
