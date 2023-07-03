@@ -4,7 +4,6 @@ import { labels } from "../../labels";
 import "./SinglePage.scss";
 
 const SinglePage = () => {
-  
   const para = useParams();
   const idCharacter = para.id as unknown as number;
   const index: number = idCharacter as number;
@@ -12,7 +11,6 @@ const SinglePage = () => {
   const noImage = "https://ogrod.ukw.edu.pl/img/no-image-person.png";
 
   return (
-
     <div className="singlePageBox">
       <img
         className="singlePageBox__img"
@@ -29,25 +27,25 @@ const SinglePage = () => {
               <span className="singlePageBox__data-textDnd--title">
                 {labels.singlePage.titlePersonalityTraits}
               </span>
-              {dataAndIndex.history.personality_traits}
+              {dataAndIndex.allInformation.personality_traits}
             </p>
             <p>
               <span className="singlePageBox__data-textDnd--title">
                 {labels.singlePage.titleIdeals}
               </span>
-              {dataAndIndex.history.ideals}
+              {dataAndIndex.allInformation.ideals}
             </p>
             <p>
               <span className="singlePageBox__data-textDnd--title">
                 {labels.singlePage.titleBonds}
               </span>
-              {dataAndIndex.history.bonds}
+              {dataAndIndex.allInformation.bonds}
             </p>
             <p>
               <span className="singlePageBox__data-textDnd--title">
                 {labels.singlePage.titleFlaws}
               </span>
-              {dataAndIndex.history.flaws}
+              {dataAndIndex.allInformation.flaws}
             </p>
           </div>
         )}
@@ -55,10 +53,10 @@ const SinglePage = () => {
           {labels.singlePage.titleHistory}
         </p>
         <p className="singlePageBox__data-history">
-          {dataAndIndex.history.history}
+          {dataAndIndex.allInformation.history}
         </p>
       </div>
-    </div> 
+    </div>
   );
 };
 

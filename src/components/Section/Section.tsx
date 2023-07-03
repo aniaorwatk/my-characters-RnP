@@ -4,9 +4,8 @@ import Filter from "../Filter/Filter";
 import MenuFilter from "../MenuFilter/MenuFilter";
 import Search from "../Search/Search";
 import "./Section.scss";
-import {
-  filteredProducts,
-} from "./SectionHandler";
+import { filteredProducts } from "./SectionHandler";
+import dataCharacters from "../../data/dataCharacters";
 
 export interface ISectionType {
   death: boolean;
@@ -26,7 +25,7 @@ const Section = () => {
   };
 
   useEffect(() => {
-    setFilterCharacters(filteredProducts(query));
+    setFilterCharacters(filteredProducts(dataCharacters, query));
   }, [query]);
 
   let cards = filterCharacters.map((item) => {
@@ -49,10 +48,19 @@ const Section = () => {
     <div className="section">
       <MenuFilter
         searchBox={<Search searchCharacter={searchCharacter} query={query} />}
-        btnBox={<Filter setFilterCharacters={setFilterCharacters} query={query} />} />
+        btnBox={
+          dataCharacters && (
+            <Filter
+              setFilterCharacters={setFilterCharacters}
+              query={query}
+              dataCharacter={dataCharacters}
+            />
+          )
+        } // Warunkowe przekazanie dataCharacter
+      />
       <div className="section__cards">{cards}</div>
     </div>
   );
 };
 
-export default Section
+export default Section;
