@@ -1,0 +1,16 @@
+@import "../../scss/Main";
+
+.linkReturn{
+    background: $color-buttonReturn;
+    padding:10px 30px;
+    border: 1px solid $color-text-black;
+    border-radius: 15px;
+    font-size: $font-size-M;
+    font-family: "Moon Dance", cursive;
+    color: $color-text-white;
+    transition: 0.5s;
+}
+
+.linkReturn:hover{
+    background: $color-buttonReturn-hover;
+}

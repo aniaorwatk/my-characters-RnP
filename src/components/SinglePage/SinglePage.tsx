@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import dataCharacters from "../../data/dataCharacters";
 import { labels } from "../../labels";
+import LinkReturn from "../LinkReturn/LinkReturn";
 import "./SinglePage.scss";
 
 const SinglePage = () => {
@@ -12,6 +13,7 @@ const SinglePage = () => {
 
   return (
     <div className="singlePageBox">
+      <LinkReturn />
       <img
         className="singlePageBox__img"
         src={dataAndIndex.src ? dataAndIndex.src : noImage}

@@ -7,7 +7,6 @@ import {
   filterCthulhu,
   filterDeadCharacters,
   filterDnD,
-  filteredProducts,
   filterLivingCharacters,
 } from "../Section/SectionHandler";
 import "./Filter.scss";
@@ -18,15 +17,13 @@ interface IFilterType {
   dataCharacter?: Character[];
 }
 
-const Filter = ({ setFilterCharacters, query, dataCharacter }: IFilterType) => {
+const Filter = ({ setFilterCharacters, dataCharacter }: IFilterType) => {
   return (
     <div className="filter">
       <BtnFilter
         labelBtn={labels.section.labelBtnAllCharacters}
         btnColor={colorBtn.colorAll}
-        onClick={() =>
-          setFilterCharacters(filteredProducts(dataCharacter || [], query))
-        }
+        onClick={() => setFilterCharacters(dataCharacter || [])}
       />
       <BtnFilter
         labelBtn={labels.section.labelBtnDnD}

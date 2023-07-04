@@ -1,20 +1,27 @@
 @import "../../scss/Main";
 
 .section {
+  display: flex;
+  flex-direction: column;
+
+  gap:30px;
+  padding: 30px 10px;
   &__cards {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    width: 100vw;
-    gap: 15px;
-    padding: 15px;
+    justify-content: center;
+    margin:0 30px;
+    gap: 30px;
   }
 }
 
 @media only screen and (min-width: $breakpointXL) {
+  
   .section {
+    padding: 30px;
     &__cards {
       width: 60vw;
+
     }
   }
 }
