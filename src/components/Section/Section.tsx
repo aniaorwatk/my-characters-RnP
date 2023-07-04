@@ -56,9 +56,9 @@ const Section = () => {
               dataCharacter={dataCharacters}
             />
           )
-        } // Warunkowe przekazanie dataCharacter
+        }
       />
-      <div className="section__cards">{cards}</div>
+      {cards ? <div className="section__cards">{cards}</div> : "Loading..."}
     </div>
   );
 };
