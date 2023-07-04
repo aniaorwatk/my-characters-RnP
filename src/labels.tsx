@@ -9,12 +9,13 @@ export const labels = {
     titleIdeals: "Ideals: ",
     titleBonds: "Bonds: ",
     titleFlaws: "Flaws: ",
+    labelBtnReturn: "Return",
   },
-  section:{
+  section: {
     labelBtnDnD: "Only D&D",
     labelBtnCthulhu: "Only Cthulhu",
     labelBtnAllCharacters: "All Characters",
     labelBtnLivingCharacters: "Living Characters",
     labelBtnDeadCharacters: "Dead Characters",
-  }
+  },
 };

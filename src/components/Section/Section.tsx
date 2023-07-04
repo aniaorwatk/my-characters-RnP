@@ -3,9 +3,9 @@ import Card from "../Card/Card";
 import Filter from "../Filter/Filter";
 import MenuFilter from "../MenuFilter/MenuFilter";
 import Search from "../Search/Search";
-import "./Section.scss";
-import { filteredProducts } from "./SectionHandler";
 import dataCharacters from "../../data/dataCharacters";
+import { filteredProducts } from "./SectionHandler";
+import "./Section.scss";
 
 export interface ISectionType {
   death: boolean;
