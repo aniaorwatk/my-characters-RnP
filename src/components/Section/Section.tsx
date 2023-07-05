@@ -26,6 +26,7 @@ const Section = () => {
 
   useEffect(() => {
     setFilterCharacters(filteredProducts(dataCharacters, query));
+    console.log("section");
   }, [query]);
 
   let cards = filterCharacters.map((item) => {
