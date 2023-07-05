@@ -3,25 +3,23 @@
 .section {
   display: flex;
   flex-direction: column;
-
-  gap:30px;
+  align-items: center;
+  gap: 30px;
   padding: 30px 10px;
   &__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:0 30px;
+    margin: 0 30px;
     gap: 30px;
   }
 }
 
 @media only screen and (min-width: $breakpointXL) {
-  
   .section {
     padding: 30px;
     &__cards {
       width: 60vw;
-
     }
   }
 }

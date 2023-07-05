@@ -9,11 +9,7 @@
   border: 1px solid transparent;
   background-color: $color-text-white;
   cursor: pointer;
-  transition:0.5s ease-in-out;
-}
-
-.btnFilter:hover{
-  transform: scale(1.02);
+  transition: 0.5s ease-in-out;
 }
 
 .colorDnD:hover {
@@ -33,7 +29,7 @@
 
 .colorDead:hover {
   color: $color-text-black;
-  border-bottom: 1px solid
+  border-bottom: 1px solid;
 }
 
 .colorLiving:hover {
