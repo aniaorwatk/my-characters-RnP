@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders snapshot 1`] = `
-<h1
-  class="header__title"
->
-  MY CHARACTERS IN PEN AND PAPER GAMES
-</h1>
-`;

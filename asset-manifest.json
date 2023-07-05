@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-characters-RnP/static/css/main.537554e7.css",
+    "main.js": "/my-characters-RnP/static/js/main.9b0aa127.js",
+    "static/media/diceHeader.jpg": "/my-characters-RnP/static/media/diceHeader.92d0a4645758611695cd.jpg",
+    "index.html": "/my-characters-RnP/index.html",
+    "main.537554e7.css.map": "/my-characters-RnP/static/css/main.537554e7.css.map",
+    "main.9b0aa127.js.map": "/my-characters-RnP/static/js/main.9b0aa127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.537554e7.css",
+    "static/js/main.9b0aa127.js"
+  ]
+}
